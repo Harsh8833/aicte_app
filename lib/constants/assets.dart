@@ -7,5 +7,7 @@ class Assets {
   // Indian Flag Illustration
   static const String indianFlag = "assets/images/flag_illustration.png";
 
+  static const String cor1 = "assets/images/cor1.png";
+
 
 }
