@@ -1,6 +1,5 @@
-
-
 import 'package:aicte_app/MVVM/view/Homepage/homepage.dart';
+import 'package:aicte_app/MVVM/view/Navigation/navscreen.dart';
 import 'package:flutter/material.dart';
 
 class RouteGenerator {
@@ -14,6 +13,10 @@ class RouteGenerator {
           builder: (_) => const Homepage(),
         );
 
+      case NavScreen.route:
+        return MaterialPageRoute(
+          builder: (_) => NavScreen(),
+        );
 
       default:
         return _errorRoute();
