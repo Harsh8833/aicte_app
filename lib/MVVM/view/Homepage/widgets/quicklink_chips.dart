@@ -6,7 +6,6 @@ class QuickLinkChips extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    
     List<Map<String, String>> quickChips = [
       {
         'text': "Vidyanjali-HE",
@@ -38,7 +37,7 @@ class QuickLinkChips extends StatelessWidget {
       },
       {
         'text': "More",
-        'link': "",
+        'link': "https://www.aicte-india.org/bureaus/quick-link",
       },
     ];
 
@@ -49,13 +48,11 @@ class QuickLinkChips extends StatelessWidget {
         return GestureDetector(
           onTap: () {
             //Works for every chip except more
-            if (e['text'] != "More") {
-              final url = Uri.parse(e['link']!);
-              launchUrl(
-                url,
-                mode: LaunchMode.inAppWebView,
-              );
-            }
+            final url = Uri.parse(e['link']!);
+            launchUrl(
+              url,
+              mode: LaunchMode.inAppWebView,
+            );
           },
           child: Chip(
             padding: const EdgeInsets.all(8),

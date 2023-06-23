@@ -1,10 +1,12 @@
 import 'package:aicte_app/MVVM/view/Homepage/widgets/announcement_chips.dart';
 import 'package:aicte_app/MVVM/view/Homepage/widgets/quicklink_chips.dart';
+import 'package:aicte_app/MVVM/view/Homepage/widgets/scheme_card.dart';
 import 'package:aicte_app/MVVM/view/Homepage/widgets/search_bar.dart';
 import 'package:aicte_app/constants/assets.dart';
 import 'package:aicte_app/constants/dimens.dart';
 import 'package:aicte_app/widgets/app_scaffold.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Homepage extends StatelessWidget {
   static const route = '/homepage';
@@ -79,40 +81,110 @@ class Homepage extends StatelessWidget {
                 }).toList(),
               ),
               const SizedBox(height: 35),
-              const Row(
-                children: [
-                  Text(
-                    "Quick Links",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      fontSize: 15,
-                    ),
-                  ),
-                ],
-              ),
+              titleText("Quick Links"),
               const SizedBox(height: 15),
               const QuickLinkChips(),
               const SizedBox(height: 35),
-              const Row(
-                children: [
-                  Text(
-                    "Announcements",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
-                      fontSize: 15,
-                    ),
-                  ),
-                ],
-              ),
+              titleText("Announcement"),
               const SizedBox(height: 15),
               const AnnouncementChip(),
+              const SizedBox(height: 35),
+              titleText("Bureaus"),
+              const SizedBox(height: 15),
+              SizedBox(
+                width: size.width,
+                height: 154,
+                child: Image.asset(Assets.bureau1, fit: BoxFit.fill),
+              ),
+              //Bureau Carousel
+              Container(
+                width: size.width,
+                height: 60,
+                padding:
+                    const EdgeInsets.symmetric(vertical: 6, horizontal: 10),
+                color: Colors.black.withOpacity(0.15),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      "Overview",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 15,
+                      ),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          "An Overview of Bureaus and Cells",
+                          style: TextStyle(color: Colors.white, fontSize: 12),
+                        ),
+                        GestureDetector(
+                          onTap: () {
+                            final url = Uri.parse(
+                                "https://www.aicte-india.org/bureaus");
+                            launchUrl(url, mode: LaunchMode.inAppWebView);
+                          },
+                          child: const Text(
+                            "Know More",
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Color(0xffF75700),
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
+              ),
+              const SizedBox(height: 35),
+              titleText("Initiatives & Schemes"),
+              const SizedBox(height: 15),
+              SizedBox(
+                width: size.width,
+                height: 180,
+                child: Image.asset(
+                  Assets.schemes1,
+                  fit: BoxFit.fill,
+                ),
+              ),
+              const SizedBox(height: 25),
+              const SchemeCard(
+                title: "Prime Minister's Special Scholarship Scheme (PMSSS)",
+                img: Assets.schemes2,
+                link: "https://www.aicte-india.org/bureaus/jk",
+              ),
+              const SizedBox(height: 25),
+              const SchemeCard(
+                title:
+                    "Unnat Bharat Abhiyan for transformational change in rural development processes",
+                img: Assets.schemes3,
+                link: "https://unnatbharatabhiyan.gov.in/",
+              ),
               const SizedBox(height: 10),
             ],
           ),
         ),
       ),
+    );
+  }
+
+  Widget titleText(String title) {
+    return Row(
+      children: [
+        Text(
+          title,
+          style: const TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+            fontSize: 17,
+          ),
+        ),
+      ],
     );
   }
 }
