@@ -1,53 +1,18 @@
+import 'package:aicte_app/MVVM/view%20model/navigation%20viewmodel/navigation_view_model.dart';
 import 'package:aicte_app/MVVM/view/Homepage/homepage.dart';
 import 'package:aicte_app/constants/assets.dart';
 import 'package:aicte_app/constants/dimens.dart';
 import 'package:aicte_app/widgets/app_scaffold.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import '../Homepage/widgets/nav_tiles.dart';
 
 class NavScreen extends StatelessWidget {
   static const route = '/navscreen';
-  NavScreen({super.key});
+  const NavScreen({super.key});
 
-  List<Map<String, String>> navData = [
-    {
-      'title': "ABOUT US",
-      'route': Homepage.route,
-    },
-    {
-      'title': "NEWSROOM",
-      'route': Homepage.route,
-    },
-    {
-      'title': "BUREAUS",
-      'route': Homepage.route,
-    },
-    {
-      'title': "INITIATIVES",
-      'route': Homepage.route,
-    },
-    {
-      'title': "SCHEMES",
-      'route': Homepage.route,
-    },
-    {
-      'title': "EDUCATION",
-      'route': Homepage.route,
-    },
-    {
-      'title': "OPPURTUNITES",
-      'route': Homepage.route,
-    },
-    {
-      'title': "STATISTICS",
-      'route': Homepage.route,
-    },
-    {
-      'title': "BULLETINS",
-      'route': Homepage.route,
-    },
-  ];
+  
   @override
   Widget build(BuildContext context) {
     return AppScaffold(
@@ -70,11 +35,10 @@ class NavScreen extends StatelessWidget {
               ListView.builder(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
-                itemCount: navData.length,
+                itemCount: context.read<NavigationViewModel>().navLinks.length,
                 itemBuilder: (context, index) {
                   return NavTile(
-                    title: navData[index]['title'],
-                    route: navData[index]['route'],
+                   index: index,
                   );
                 },
               ),

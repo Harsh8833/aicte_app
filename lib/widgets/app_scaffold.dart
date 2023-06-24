@@ -1,22 +1,17 @@
+import 'package:aicte_app/MVVM/view%20model/navigation%20viewmodel/navigation_view_model.dart';
 import 'package:aicte_app/MVVM/view/Homepage/homepage.dart';
 import 'package:aicte_app/constants/assets.dart';
 import 'package:aicte_app/MVVM/view/Navigation/navscreen.dart';
 import 'package:flutter/material.dart';
-import 'package:aicte_app/constants/globals.dart';
+import 'package:provider/provider.dart';
 
-class AppScaffold extends StatefulWidget {
+class AppScaffold extends StatelessWidget {
   final Widget body;
 
-  AppScaffold({super.key, required this.body});
+  const AppScaffold({super.key, required this.body});
 
-  @override
-  State<AppScaffold> createState() => _AppScaffoldState();
-}
-
-class _AppScaffoldState extends State<AppScaffold> {
   @override
   Widget build(BuildContext context) {
-    final routeName = ModalRoute.of(context)!.settings.name ?? Homepage.route;
     return Scaffold(
       body: Stack(children: [
         Container(
@@ -37,7 +32,7 @@ class _AppScaffoldState extends State<AppScaffold> {
               Assets.indianFlag,
               width: MediaQuery.of(context).size.width * 0.4,
             )),
-        widget.body,
+        body,
         Padding(
           padding: EdgeInsets.only(
             top: MediaQuery.of(context).size.height * 0.045,
@@ -57,18 +52,23 @@ class _AppScaffoldState extends State<AppScaffold> {
             ),
             child: IconButton.filled(
               onPressed: () {
-                Globals.navOpen
-                    ? Navigator.pushReplacementNamed(context, Homepage.route)
-                    : Navigator.pushReplacementNamed(context, NavScreen.route);
-                setState(() {
-                  Globals.navOpen = !Globals.navOpen;
-                });
+                final navigationViewModel =
+                    Provider.of<NavigationViewModel>(context, listen: false);
+                if (navigationViewModel.isDrawerOpen) {
+                  Navigator.pushReplacementNamed(context, Homepage.route);
+                } else {
+                  Navigator.pushReplacementNamed(context, NavScreen.route);
+                }
+                navigationViewModel.setDrawerOpen =
+                    !navigationViewModel.isDrawerOpen;
               },
-              icon: Globals.navOpen ? Icon(Icons.close) : Icon(Icons.menu_rounded),
+              icon: context.watch<NavigationViewModel>().isDrawerOpen
+                  ? const Icon(Icons.close)
+                  : const Icon(Icons.menu_rounded),
               color: Colors.black,
               style: IconButton.styleFrom(
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(6),
+                  borderRadius: BorderRadius.circular(8),
                 ),
                 backgroundColor: Colors.white,
                 shadowColor: Colors.black,
