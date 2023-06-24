@@ -1,10 +1,10 @@
 import 'package:aicte_app/MVVM/view/Homepage/homepage.dart';
-import 'package:aicte_app/MVVM/view/Navigation/navscreen.dart';
+import 'package:aicte_app/MVVM/view/Navigation/navigation_menu.dart';
+import 'package:aicte_app/MVVM/view/Navigation/navigation_submenu.dart';
 import 'package:flutter/material.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
-    final args = settings.arguments;
 
     switch (settings.name) {
       // splash screen
@@ -13,9 +13,14 @@ class RouteGenerator {
           builder: (_) => const Homepage(),
         );
 
-      case NavScreen.route:
+      case NavigationMenu.route:
         return MaterialPageRoute(
-          builder: (_) => NavScreen(),
+          builder: (_) => const NavigationMenu(),
+        );
+
+      case NavigationSubMenu.route:
+        return MaterialPageRoute(
+          builder: (_) => const NavigationSubMenu(),
         );
 
       default:

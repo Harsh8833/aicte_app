@@ -1,7 +1,7 @@
 import 'package:aicte_app/MVVM/view%20model/navigation%20viewmodel/navigation_view_model.dart';
 import 'package:aicte_app/MVVM/view/Homepage/homepage.dart';
 import 'package:aicte_app/constants/assets.dart';
-import 'package:aicte_app/MVVM/view/Navigation/navscreen.dart';
+import 'package:aicte_app/MVVM/view/Navigation/navigation_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -57,7 +57,7 @@ class AppScaffold extends StatelessWidget {
                 if (navigationViewModel.isDrawerOpen) {
                   Navigator.pushReplacementNamed(context, Homepage.route);
                 } else {
-                  Navigator.pushReplacementNamed(context, NavScreen.route);
+                  Navigator.pushReplacementNamed(context, NavigationMenu.route);
                 }
                 navigationViewModel.setDrawerOpen =
                     !navigationViewModel.isDrawerOpen;
