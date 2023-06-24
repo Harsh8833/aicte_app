@@ -8,6 +8,9 @@ class Assets {
   static const String indianFlag = "assets/images/flag_illustration.png";
 
   static const String cor1 = "assets/images/cor1.png";
+  static const String cor2 = "assets/images/cor2.png";
+  static const String cor3 = "assets/images/cor3.png";
+  static const String cor4 = "assets/images/cor4.png";
 
   static const String twitter = "assets/images/twitter.png";
 
@@ -15,6 +18,10 @@ class Assets {
 
   //Bureau
   static const String bureau1 = "assets/images/bureau1.png";
+  static const String bureau2 = "assets/images/bureau2.png";
+  static const String bureau3 = "assets/images/bureau3.png";
+  static const String bureau4 = "assets/images/bureau4.png";
+  static const String bureau5 = "assets/images/bureau5.png";
 
   //Initiatives & Schemes
   static const String schemes1 = "assets/images/schemes1.png";
