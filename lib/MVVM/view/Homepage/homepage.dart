@@ -1,6 +1,8 @@
 import 'package:aicte_app/MVVM/view/Homepage/widgets/announcement_chips.dart';
+import 'package:aicte_app/MVVM/view/Homepage/widgets/facility_card.dart';
 import 'package:aicte_app/MVVM/view/Homepage/widgets/quicklink_chips.dart';
 import 'package:aicte_app/MVVM/view/Homepage/widgets/scheme_card.dart';
+import 'package:aicte_app/MVVM/view/Homepage/widgets/scholarship_card.dart';
 import 'package:aicte_app/MVVM/view/Homepage/widgets/search_bar.dart';
 import 'package:aicte_app/constants/assets.dart';
 import 'package:aicte_app/constants/dimens.dart';
@@ -165,7 +167,35 @@ class Homepage extends StatelessWidget {
                 img: Assets.schemes3,
                 link: "https://unnatbharatabhiyan.gov.in/",
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 35),
+              const ScholarshipCard(),
+              const SizedBox(height: 35),
+              const FacilityCard(
+                img: Assets.facility1,
+                color: Color(0xFFE175A4),
+                title: "Women Empowerment",
+                description:
+                    "Learn about AICTE’s contribution towards the socio-economic development of women through various women-oriented programmes.",
+                link: "",
+              ),
+              const SizedBox(height: 20),
+              const FacilityCard(
+                img: Assets.facility2,
+                color: Color(0xFF55BAD2),
+                title: "Facilities for Differently Abled",
+                description:
+                    "Creating awareness in the higher education system and providing necessary guidance & counselling to differently-abled people.",
+                link: "",
+              ),
+              const SizedBox(height: 20),
+              const FacilityCard(
+                img: Assets.facility3,
+                color: Color(0xFF429488),
+                title: "Women Empowerment",
+                description:
+                    "Explore various India-centric and other research funds and the way to avail of them.",
+                link: "",
+              ),
             ],
           ),
         ),
