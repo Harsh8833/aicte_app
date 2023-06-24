@@ -12,8 +12,8 @@ class Assets {
   static const String cor3 = "assets/images/cor3.png";
   static const String cor4 = "assets/images/cor4.png";
 
+  //Social Media Icons
   static const String twitter = "assets/images/twitter.png";
-
   static const String facebook = "assets/images/facebook.png";
 
   //Bureau
@@ -38,4 +38,7 @@ class Assets {
   static const String facility1 = "assets/images/facility1.png";
   static const String facility2 = "assets/images/facility2.png";
   static const String facility3 = "assets/images/facility3.png";
+
+  //About Us
+  static const String about = "assets/images/about.png";
 }

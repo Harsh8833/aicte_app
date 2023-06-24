@@ -7,7 +7,7 @@ import 'package:aicte_app/constants/globals.dart';
 class AppScaffold extends StatefulWidget {
   final Widget body;
 
-  AppScaffold({super.key, required this.body});
+  const AppScaffold({super.key, required this.body});
 
   @override
   State<AppScaffold> createState() => _AppScaffoldState();
@@ -16,7 +16,6 @@ class AppScaffold extends StatefulWidget {
 class _AppScaffoldState extends State<AppScaffold> {
   @override
   Widget build(BuildContext context) {
-    final routeName = ModalRoute.of(context)!.settings.name ?? Homepage.route;
     return Scaffold(
       body: Stack(children: [
         Container(
@@ -32,11 +31,12 @@ class _AppScaffoldState extends State<AppScaffold> {
           ),
         ),
         Align(
-            alignment: Alignment.topRight,
-            child: Image.asset(
-              Assets.indianFlag,
-              width: MediaQuery.of(context).size.width * 0.4,
-            )),
+          alignment: Alignment.topRight,
+          child: Image.asset(
+            Assets.indianFlag,
+            width: MediaQuery.of(context).size.width * 0.4,
+          ),
+        ),
         widget.body,
         Padding(
           padding: EdgeInsets.only(
@@ -58,13 +58,15 @@ class _AppScaffoldState extends State<AppScaffold> {
             child: IconButton.filled(
               onPressed: () {
                 Globals.navOpen
-                    ? Navigator.pushReplacementNamed(context, Homepage.route)
+                    ? Navigator.pushNamed(context, Homepage.route)
                     : Navigator.pushReplacementNamed(context, NavScreen.route);
                 setState(() {
                   Globals.navOpen = !Globals.navOpen;
                 });
               },
-              icon: Globals.navOpen ? Icon(Icons.close) : Icon(Icons.menu_rounded),
+              icon: Globals.navOpen
+                  ? const Icon(Icons.close_rounded)
+                  : const Icon(Icons.menu_rounded),
               color: Colors.black,
               style: IconButton.styleFrom(
                 shape: RoundedRectangleBorder(

@@ -1,10 +1,11 @@
+import 'package:aicte_app/MVVM/view/AboutUs/about_us.dart';
 import 'package:aicte_app/MVVM/view/Homepage/homepage.dart';
 import 'package:aicte_app/constants/assets.dart';
 import 'package:aicte_app/constants/dimens.dart';
 import 'package:aicte_app/widgets/app_scaffold.dart';
 import 'package:flutter/material.dart';
 
-import '../Homepage/widgets/nav_tiles.dart';
+import 'widgets/nav_tiles.dart';
 
 class NavScreen extends StatelessWidget {
   static const route = '/navscreen';
@@ -13,7 +14,7 @@ class NavScreen extends StatelessWidget {
   List<Map<String, String>> navData = [
     {
       'title': "ABOUT US",
-      'route': Homepage.route,
+      'route': AboutUS.route,
     },
     {
       'title': "NEWSROOM",
@@ -48,6 +49,7 @@ class NavScreen extends StatelessWidget {
       'route': Homepage.route,
     },
   ];
+
   @override
   Widget build(BuildContext context) {
     return AppScaffold(
