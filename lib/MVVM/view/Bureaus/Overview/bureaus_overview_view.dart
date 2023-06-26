@@ -36,7 +36,7 @@ class BureausOverviewView extends StatelessWidget {
                 CarouselSlider.builder(
                     itemCount: 4,
                     options: CarouselOptions(
-                      height: 350,
+                      height: 400,
                       viewportFraction: 0.9,
                       autoPlay: true,
                       autoPlayCurve: Curves.easeOut,
@@ -44,9 +44,9 @@ class BureausOverviewView extends StatelessWidget {
                     itemBuilder: (context, index, realIndex) {
                       return BureausCard(bureausCardModel: context.read<BureausViewModel>().bureausData[index],);
                     }),
-                    SizedBox(height: 20),
-                    TitleBar(title: "AICTE Cells"),
-                    AicteCells(),
+                    const SizedBox(height: 20),
+                    const TitleBar(title: "AICTE Cells"),
+                    const AicteCells(),
                     const SizedBox(height: 200),
               ],
             ),
