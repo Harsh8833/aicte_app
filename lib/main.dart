@@ -1,3 +1,4 @@
+import 'package:aicte_app/MVVM/view%20model/bureaus%20view%20model/bureaus_view_model.dart';
 import 'package:aicte_app/MVVM/view%20model/navigation%20viewmodel/navigation_view_model.dart';
 import 'package:aicte_app/MVVM/view/Homepage/homepage.dart';
 import 'package:aicte_app/utils/routes/routes.dart';
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
         providers: [
           ChangeNotifierProvider(create: (_) => NavigationViewModel()),
+          ChangeNotifierProvider(create: (_) => BureausViewModel()),
         ],
         child: MaterialApp(
           title: 'AICTE',

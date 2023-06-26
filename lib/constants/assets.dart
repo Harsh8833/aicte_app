@@ -1,6 +1,8 @@
 class Assets {
   Assets._();
 
+  static const String aicteOffice = "assets/images/aicte_office.png";
+
   // splash screen assets
   static const String appLogo = "assets/images/primary_logo.png";
 
