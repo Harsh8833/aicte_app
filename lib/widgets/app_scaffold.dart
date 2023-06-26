@@ -27,12 +27,7 @@ class AppScaffold extends StatelessWidget {
             ),
           ),
         ),
-        Align(
-            alignment: Alignment.topRight,
-            child: Image.asset(
-              Assets.indianFlag,
-              width: MediaQuery.of(context).size.width * 0.4,
-            )),
+       
         body,
         Padding(
           padding: EdgeInsets.only(
