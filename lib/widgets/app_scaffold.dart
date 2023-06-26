@@ -57,7 +57,6 @@ class AppScaffold extends StatelessWidget {
                     Provider.of<NavigationViewModel>(context, listen: false);
                 switch (navigationViewModel.navigationState) {
                   case NavigationState.closed:
-                    print(navigationViewModel.navigationState);
                     Navigator.pushReplacementNamed(
                         context, NavigationMenu.route);
                         navigationViewModel.setNavigationState =
@@ -65,14 +64,12 @@ class AppScaffold extends StatelessWidget {
                     break; 
 
                   case NavigationState.menu:
-                    print(navigationViewModel.navigationState);
                     Navigator.pushReplacementNamed(context, Homepage.route);
                     navigationViewModel.setNavigationState =
                         NavigationState.closed;
                     break; 
 
                   case NavigationState.submenu:
-                    print(navigationViewModel.navigationState);
                     Navigator.pushReplacementNamed(
                         context, NavigationMenu.route);
                     navigationViewModel.setNavigationState =

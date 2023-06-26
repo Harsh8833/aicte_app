@@ -1,4 +1,5 @@
 import 'package:aicte_app/MVVM/view%20model/navigation%20viewmodel/navigation_view_model.dart';
+import 'package:aicte_app/MVVM/view/Navigation/widgets/nav_subtiles.dart';
 import 'package:aicte_app/constants/assets.dart';
 import 'package:aicte_app/constants/dimens.dart';
 import 'package:aicte_app/widgets/app_scaffold.dart';
@@ -34,9 +35,9 @@ class NavigationSubMenu extends StatelessWidget {
               ListView.builder(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
-                itemCount: context.read<NavigationViewModel>().navLinks.length,
+                itemCount: context.read<NavigationViewModel>().selectedMenu!.subMenu.length,
                 itemBuilder: (context, index) {
-                  return NavTile(
+                  return NavSubTile(
                    index: index,
                   );
                 },
