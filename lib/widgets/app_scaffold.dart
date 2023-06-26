@@ -2,6 +2,7 @@ import 'package:aicte_app/MVVM/view%20model/navigation%20viewmodel/navigation_vi
 import 'package:aicte_app/MVVM/view/Homepage/homepage.dart';
 import 'package:aicte_app/constants/assets.dart';
 import 'package:aicte_app/MVVM/view/Navigation/navigation_menu.dart';
+import 'package:aicte_app/utils/enums/navigation_state.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -54,17 +55,38 @@ class AppScaffold extends StatelessWidget {
               onPressed: () {
                 final navigationViewModel =
                     Provider.of<NavigationViewModel>(context, listen: false);
-                if (navigationViewModel.isDrawerOpen) {
-                  Navigator.pushReplacementNamed(context, Homepage.route);
-                } else {
-                  Navigator.pushReplacementNamed(context, NavigationMenu.route);
+                switch (navigationViewModel.navigationState) {
+                  case NavigationState.closed:
+                    print(navigationViewModel.navigationState);
+                    Navigator.pushReplacementNamed(
+                        context, NavigationMenu.route);
+                        navigationViewModel.setNavigationState =
+                        NavigationState.menu;
+                    break; 
+
+                  case NavigationState.menu:
+                    print(navigationViewModel.navigationState);
+                    Navigator.pushReplacementNamed(context, Homepage.route);
+                    navigationViewModel.setNavigationState =
+                        NavigationState.closed;
+                    break; 
+
+                  case NavigationState.submenu:
+                    print(navigationViewModel.navigationState);
+                    Navigator.pushReplacementNamed(
+                        context, NavigationMenu.route);
+                    navigationViewModel.setNavigationState =
+                        NavigationState.menu;
+                    break; 
                 }
-                navigationViewModel.setDrawerOpen =
-                    !navigationViewModel.isDrawerOpen;
               },
-              icon: context.watch<NavigationViewModel>().isDrawerOpen
-                  ? const Icon(Icons.close)
-                  : const Icon(Icons.menu_rounded),
+              icon: context.watch<NavigationViewModel>().navigationState ==
+                      NavigationState.closed
+                  ? const Icon(Icons.menu_rounded)
+                  : context.watch<NavigationViewModel>().navigationState ==
+                          NavigationState.menu
+                      ? const Icon(Icons.close)
+                      : const Icon(Icons.arrow_back_ios_new_rounded),
               color: Colors.black,
               style: IconButton.styleFrom(
                 shape: RoundedRectangleBorder(

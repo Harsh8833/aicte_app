@@ -1,5 +1,4 @@
 import 'package:aicte_app/MVVM/view%20model/navigation%20viewmodel/navigation_view_model.dart';
-import 'package:aicte_app/MVVM/view/Homepage/homepage.dart';
 import 'package:aicte_app/constants/assets.dart';
 import 'package:aicte_app/constants/dimens.dart';
 import 'package:aicte_app/widgets/app_scaffold.dart';
