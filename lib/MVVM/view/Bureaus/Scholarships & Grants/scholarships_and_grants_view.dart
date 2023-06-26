@@ -7,8 +7,11 @@ class ScholarshipsAndGrantsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const AppScaffold(body: Center(child: Text("ScholarshipsAndGrants Page",
-        style: TextStyle(
-            color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18)),));
+    return const AppScaffold(
+        body: Center(
+      child: Text("ScholarshipsAndGrants Page",
+          style: TextStyle(
+              color: Colors.white, fontWeight: FontWeight.bold, fontSize: 18)),
+    ));
   }
 }

@@ -15,7 +15,6 @@ import 'package:flutter/material.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
-
     switch (settings.name) {
       // splash screen
       case Homepage.route:
@@ -33,55 +32,52 @@ class RouteGenerator {
           builder: (_) => const NavigationSubMenu(),
         );
 
-         // AboutUs Routes
-        case AboutUsOverviewView.route:
+      // AboutUs Routes
+      case AboutUsOverviewView.route:
         return MaterialPageRoute(
           builder: (_) => const AboutUsOverviewView(),
         );
-        case LeadershipTeamView.route:
+      case LeadershipTeamView.route:
         return MaterialPageRoute(
           builder: (_) => const LeadershipTeamView(),
         );
 
-        case MessagesView.route:
+      case MessagesView.route:
         return MaterialPageRoute(
-          builder: (_) => const ScholarshipsAndGrantsView(),
+          builder: (_) => const MessagesView(),
         );
-        case HistoryView.route:
+      case HistoryView.route:
         return MaterialPageRoute(
           builder: (_) => const HistoryView(),
         );
-        case OrganizationStructureView.route:
+      case OrganizationStructureView.route:
         return MaterialPageRoute(
           builder: (_) => const OrganizationStructureView(),
         );
 
-        
-
-        // Bureaus Routes
-        case BureausOverviewView.route:
+      // Bureaus Routes
+      case BureausOverviewView.route:
         return MaterialPageRoute(
           builder: (_) => const BureausOverviewView(),
         );
-        case AdministrationView.route:
+      case AdministrationView.route:
         return MaterialPageRoute(
           builder: (_) => const AdministrationView(),
         );
 
-        case ScholarshipsAndGrantsView.route:
+      case ScholarshipsAndGrantsView.route:
         return MaterialPageRoute(
           builder: (_) => const ScholarshipsAndGrantsView(),
         );
-        case RegulationView.route:
+      case RegulationView.route:
         return MaterialPageRoute(
           builder: (_) => const RegulationView(),
         );
-        case FinanceView.route:
+      case FinanceView.route:
         return MaterialPageRoute(
           builder: (_) => const FinanceView(),
         );
 
-       
       default:
         return _errorRoute();
     }
