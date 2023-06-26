@@ -12,7 +12,6 @@ class NavigationSubMenu extends StatelessWidget {
   static const route = '/navsubmenuscreen';
   const NavigationSubMenu({super.key});
 
-  
   @override
   Widget build(BuildContext context) {
     return AppScaffold(
@@ -31,18 +30,40 @@ class NavigationSubMenu extends StatelessWidget {
                 Assets.appLogo,
                 height: 100,
               ),
-              // SizedBox(height: 20),
+              SizedBox(height: 20),
+              Container(
+                color:  Color(0xFFF75700),
+                height: 60,
+                margin: const EdgeInsets.symmetric(horizontal: 8),
+                child: Center(
+                  child: Text(
+                    context
+                        .read<NavigationViewModel>()
+                        .selectedMenu!
+                        .title
+                        .toString(),
+                    style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        ),
+                  ),
+                ),
+              ),
               ListView.builder(
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
-                itemCount: context.read<NavigationViewModel>().selectedMenu!.subMenu.length,
+                itemCount: context
+                    .read<NavigationViewModel>()
+                    .selectedMenu!
+                    .subMenu
+                    .length,
                 itemBuilder: (context, index) {
                   return NavSubTile(
-                   index: index,
+                    index: index,
                   );
                 },
               ),
-              const SizedBox(height: 25),
+              const SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
