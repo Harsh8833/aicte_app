@@ -10,6 +10,7 @@ import 'package:aicte_app/MVVM/view/Bureaus/Finance/finance_view.dart';
 import 'package:aicte_app/MVVM/view/Bureaus/Overview/bureaus_overview_view.dart';
 import 'package:aicte_app/MVVM/view/Bureaus/Regulation/regulation_view.dart';
 import 'package:aicte_app/MVVM/view/Bureaus/Scholarships%20&%20Grants/scholarships_and_grants_view.dart';
+import 'package:aicte_app/MVVM/view/Initiatives/Smart%20India%20Hackathon/sih_view.dart';
 import 'package:aicte_app/utils/enums/navlinks.dart';
 
 class NavigationServices {
@@ -23,7 +24,9 @@ class NavigationServices {
           SubMenu(title: "Leadership Team", route: LeadershipTeamView.route),
           SubMenu(title: "Messages", route: MessagesView.route),
           SubMenu(title: "History", route: HistoryView.route),
-          SubMenu(title: "Organization Structure", route: OrganizationStructureView.route)
+          SubMenu(
+              title: "Organization Structure",
+              route: OrganizationStructureView.route)
         ],
       ),
       // NavigationModel(
@@ -50,8 +53,10 @@ class NavigationServices {
           subMenu: [
             SubMenu(title: "Overview", route: BureausOverviewView.route),
             SubMenu(title: "Startup Contenst", route: AdministrationView.route),
-            SubMenu(title: "AICTE Internship Portal", route: ScholarshipsAndGrantsView.route),
-            SubMenu(title: "Smart India Hackathon", route: RegulationView.route),
+            SubMenu(
+                title: "AICTE Internship Portal",
+                route: ScholarshipsAndGrantsView.route),
+            SubMenu(title: "Smart India Hackathon", route: SIHView.route),
             SubMenu(title: "Jal Shakti Abhiyan", route: FinanceView.route)
           ]),
       // NavigationModel(
@@ -68,9 +73,10 @@ class NavigationServices {
         navLink: NavLinks.oppurtunities,
         title: "OPPURTUNITES",
         subMenu: [
-            SubMenu(title: "For Faculty", route: BureausOverviewView.route),
-            SubMenu(title: "For Students", route: AdministrationView.route),
-            SubMenu(title: "For Institution", route: ScholarshipsAndGrantsView.route),
+          SubMenu(title: "For Faculty", route: BureausOverviewView.route),
+          SubMenu(title: "For Students", route: AdministrationView.route),
+          SubMenu(
+              title: "For Institution", route: ScholarshipsAndGrantsView.route),
         ],
       ),
       // NavigationModel(

@@ -42,5 +42,6 @@ class Assets {
   static const String facility3 = "assets/images/facility3.png";
 
   //About Us
-  static const String about = "assets/images/about.png";
+  static const String about1 = "assets/images/about.png";
+  static const String about2 = "assets/images/about2.png";
 }

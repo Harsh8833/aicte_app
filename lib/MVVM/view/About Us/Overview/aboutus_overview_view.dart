@@ -28,7 +28,7 @@ class AboutUsOverviewView extends StatelessWidget {
                 width: size.width,
                 height: 150,
                 child: Image.asset(
-                  Assets.about,
+                  Assets.about1,
                   fit: BoxFit.fill,
                 ),
               ),
