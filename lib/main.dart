@@ -2,6 +2,7 @@ import 'package:aicte_app/MVVM/view%20model/bureaus%20view%20model/bureaus_view_
 import 'package:aicte_app/MVVM/view%20model/navigation%20viewmodel/navigation_view_model.dart';
 import 'package:aicte_app/MVVM/view/Homepage/homepage.dart';
 import 'package:aicte_app/utils/routes/routes.dart';
+import 'package:aicte_app/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -22,10 +23,8 @@ class MyApp extends StatelessWidget {
         ],
         child: MaterialApp(
           title: 'AICTE',
-          theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-            useMaterial3: true,
-          ),
+          theme: AppTheme.light,
+          // darkTheme: AppTheme.dark,
           initialRoute: Homepage.route,
           onGenerateRoute: RouteGenerator.generateRoute,
         ));

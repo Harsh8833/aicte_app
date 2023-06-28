@@ -12,11 +12,11 @@ class TitleBar extends StatelessWidget {
       width: size.width,
       margin: const EdgeInsets.symmetric(vertical: 12),
       padding: const EdgeInsets.symmetric(vertical: 10),
-      decoration: const BoxDecoration(color: Colors.white12),
+      decoration:  BoxDecoration(color: Theme.of(context).colorScheme.secondary),
         child: Text(
       title,
       textAlign: TextAlign.center,
-      style: const TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+      style:  TextStyle(color: Theme.of(context).colorScheme.onSecondary, fontSize: 20, fontWeight: FontWeight.bold),
     ));
   }
 }

@@ -19,7 +19,7 @@ class NewsCard extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               border: Border.all(
-                color: Colors.white54,
+                color: Theme.of(context).colorScheme.secondary,
                 width: 2,
               ),
             ),
@@ -28,8 +28,8 @@ class NewsCard extends StatelessWidget {
               children: [
                 Text(
                   newsCardData[index].title,
-                  style: const TextStyle(
-                    color: Colors.white,
+                  style:  TextStyle(
+                    color: Theme.of(context).colorScheme.onSurface,
                     // color: Color(0xffF75700),
                     fontSize: 16,
                   ),
@@ -39,9 +39,9 @@ class NewsCard extends StatelessWidget {
                   children: [
                     Text(
                       newsCardData[index].date,
-                      style: const TextStyle(
+                      style:  TextStyle(
                         fontWeight: FontWeight.w300,
-                        color: Color(0xffF75700),
+                        color: Theme.of(context).colorScheme.primary,
                       ),
                     ),
                   ],
@@ -58,9 +58,9 @@ class NewsCard extends StatelessWidget {
                           mode: LaunchMode.inAppWebView,
                         );
                       },
-                      icon: const Icon(
+                      icon:  Icon(
                         Icons.add,
-                        color: Color(0xffF75700),
+                        color: Theme.of(context).colorScheme.primary,
                       ),
                       style: IconButton.styleFrom(
                         backgroundColor: const Color(0xffd9d9d9),

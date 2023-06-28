@@ -20,7 +20,7 @@ class SchemeCard extends StatelessWidget {
       width: size.width,
       height: 210,
       decoration: BoxDecoration(
-        color: const Color(0xffd9d9d9).withOpacity(0.15),
+        color: Theme.of(context).colorScheme.background,
         borderRadius: BorderRadius.circular(12),
       ),
       child: Column(
@@ -49,8 +49,8 @@ class SchemeCard extends StatelessWidget {
                   width: size.width * 0.75,
                   child: Text(
                     title,
-                    style: const TextStyle(
-                      color: Colors.white,
+                    style:  TextStyle(
+                      color: Theme.of(context).colorScheme.onSurface,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -62,11 +62,11 @@ class SchemeCard extends StatelessWidget {
                   },
                   child: Container(
                     decoration: BoxDecoration(
-                        color: const Color(0xffd9d9d9),
+                        color: const Color(0xffF75700),
                         borderRadius: BorderRadius.circular(8)),
                     child: const Icon(
                       Icons.chevron_right_sharp,
-                      color: Color(0xffF75700),
+                      color: Color(0xffffffff),
                     ),
                   ),
                 ),

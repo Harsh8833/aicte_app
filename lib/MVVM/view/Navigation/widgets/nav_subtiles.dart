@@ -21,7 +21,7 @@ class NavSubTile extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
-        color: const Color(0xFFD9D9D9).withOpacity(0.13),
+        color: Theme.of(context).colorScheme.background,
         child: ListTile(
           onTap: () {
             context.read<NavigationViewModel>().setNavigationState = NavigationState.closed;
@@ -31,9 +31,9 @@ class NavSubTile extends StatelessWidget {
           title: Center(
             child: Text(
               context.read<NavigationViewModel>().selectedMenu!.subMenu[index].title.toString(),
-              style: const TextStyle(
+              style:  TextStyle(
                 fontWeight: FontWeight.bold,
-                color: Colors.white,
+                color: Theme.of(context).colorScheme.primary,
               ),
             ),
           ),

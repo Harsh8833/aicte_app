@@ -15,78 +15,81 @@ class AppScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(children: [
-        Container(
-          decoration: const BoxDecoration(
-            gradient: RadialGradient(
-              center: Alignment(1.0375, 0.2287),
-              radius: 1.9138,
-              colors: [
-                Color(0xFF413E37),
-                Color(0xFF2B3040),
-              ],
-            ),
-          ),
-        ),
-       
+        // (MediaQuery.of(context).platformBrightness == Brightness.dark)
+        false
+            ? Container(
+                decoration: const BoxDecoration(
+                  gradient: RadialGradient(
+                    center: Alignment(1.0375, 0.2287),
+                    radius: 1.9138,
+                    colors: [
+                      Color(0xFF413E37),
+                      Color(0xFF2B3040),
+                    ],
+                  ),
+                ),
+              )
+            : Container(
+                decoration: BoxDecoration(
+                  gradient: RadialGradient(
+                    center: Alignment(1.0375, 0.2287),
+                    radius: 2.0446,
+                    colors: [
+                      Color(0xFFFFF7E8),
+                      Color(0xFFEAEEFF),
+                    ],
+                  ),
+                ),
+              ),
         body,
         Padding(
           padding: EdgeInsets.only(
-            top: MediaQuery.of(context).size.height * 0.045,
+            top: MediaQuery.of(context).size.height * 0.05,
             left: MediaQuery.of(context).size.width * 0.04,
           ),
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(6),
-              boxShadow: const [
-                BoxShadow(
-                  color: Color(0x3F000000),
-                  blurRadius: 2,
-                  offset: Offset(0, 2),
-                  spreadRadius: 0,
-                ),
-              ],
-            ),
-            child: IconButton.filled(
-              onPressed: () {
-                final navigationViewModel =
-                    Provider.of<NavigationViewModel>(context, listen: false);
-                switch (navigationViewModel.navigationState) {
-                  case NavigationState.closed:
-                    Navigator.pushReplacementNamed(
-                        context, NavigationMenu.route);
-                        navigationViewModel.setNavigationState =
-                        NavigationState.menu;
-                    break; 
+          child: GestureDetector(
+            onTap: () {
+              final navigationViewModel =
+                  Provider.of<NavigationViewModel>(context, listen: false);
+              switch (navigationViewModel.navigationState) {
+                case NavigationState.closed:
+                  Navigator.pushReplacementNamed(context, NavigationMenu.route);
+                  navigationViewModel.setNavigationState = NavigationState.menu;
+                  break;
 
-                  case NavigationState.menu:
-                    Navigator.pushReplacementNamed(context, Homepage.route);
-                    navigationViewModel.setNavigationState =
-                        NavigationState.closed;
-                    break; 
+                case NavigationState.menu:
+                  Navigator.pushReplacementNamed(context, Homepage.route);
+                  navigationViewModel.setNavigationState =
+                      NavigationState.closed;
+                  break;
 
-                  case NavigationState.submenu:
-                    Navigator.pushReplacementNamed(
-                        context, NavigationMenu.route);
-                    navigationViewModel.setNavigationState =
-                        NavigationState.menu;
-                    break; 
-                }
-              },
-              icon: context.watch<NavigationViewModel>().navigationState ==
+                case NavigationState.submenu:
+                  Navigator.pushReplacementNamed(context, NavigationMenu.route);
+                  navigationViewModel.setNavigationState = NavigationState.menu;
+                  break;
+              }
+            },
+            child: Container(
+              padding: EdgeInsets.all(3),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(8),
+                color: Colors.white,
+                boxShadow: const [
+                  BoxShadow(
+                    color: Color(0x3F000000),
+                    blurRadius: 2,
+                    offset: Offset(1, 3),
+                    spreadRadius: 1,
+                  ),
+                ],
+              ),
+              child: context.watch<NavigationViewModel>().navigationState ==
                       NavigationState.closed
                   ? const Icon(Icons.menu_rounded)
                   : context.watch<NavigationViewModel>().navigationState ==
                           NavigationState.menu
                       ? const Icon(Icons.close)
                       : const Icon(Icons.arrow_back_ios_new_rounded),
-              color: Colors.black,
-              style: IconButton.styleFrom(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                backgroundColor: Colors.white,
-                shadowColor: Colors.black,
-              ),
             ),
           ),
         ),

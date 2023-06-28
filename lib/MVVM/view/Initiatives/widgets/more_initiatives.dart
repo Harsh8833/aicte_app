@@ -36,7 +36,7 @@ class MoreInitiatives extends StatelessWidget {
               Container(
                 width: size.width,
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.1),
+                  color: Theme.of(context).colorScheme.background,
                   borderRadius: const BorderRadius.only(
                     bottomLeft: Radius.circular(15),
                     bottomRight: Radius.circular(15),
@@ -50,10 +50,10 @@ class MoreInitiatives extends StatelessWidget {
                       children: [
                         Text(
                           listData[count][index].title,
-                          style: const TextStyle(
+                          style:  TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,
-                            color: Colors.white,
+                            color: Theme.of(context).colorScheme.onSurface,
                           ),
                         ),
                       ],
@@ -61,8 +61,8 @@ class MoreInitiatives extends StatelessWidget {
                     const SizedBox(height: 5),
                     Text(
                       listData[count][index].description,
-                      style: const TextStyle(
-                        color: Colors.white,
+                      style:  TextStyle(
+                        color: Theme.of(context).colorScheme.onSurface,
                         fontSize: 13,
                       ),
                     ),

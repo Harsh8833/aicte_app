@@ -20,7 +20,7 @@ class OpportunityCard extends StatelessWidget {
       margin: const EdgeInsets.only(bottom: 20),
       width: size.width,
       decoration: BoxDecoration(
-          color: Colors.white12, borderRadius: BorderRadius.circular(10)),
+          color: Theme.of(context).colorScheme.background, borderRadius: BorderRadius.circular(10)),
       child: Padding(
         padding: const EdgeInsets.symmetric(
           horizontal: 12.0,
@@ -31,8 +31,8 @@ class OpportunityCard extends StatelessWidget {
           children: [
             Text(
               title,
-              style: const TextStyle(
-                color: Colors.white,
+              style:  TextStyle(
+                color: Theme.of(context).colorScheme.onSurface,
                 fontWeight: FontWeight.bold,
                 fontSize: 16,
               ),
@@ -46,8 +46,8 @@ class OpportunityCard extends StatelessWidget {
             const SizedBox(height: 10),
             Text(
               description,
-              style: const TextStyle(
-                color: Colors.white,
+              style:  TextStyle(
+                color: Theme.of(context).colorScheme.onSurface,
                 fontSize: 15,
               ),
             ),

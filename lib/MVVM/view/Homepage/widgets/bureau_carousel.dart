@@ -71,8 +71,8 @@ class BureauCarousel extends StatelessWidget {
                   children: [
                     Text(
                       bureauData[index]['title'],
-                      style: const TextStyle(
-                        color: Colors.white,
+                      style:  TextStyle(
+                        color: Theme.of(context).colorScheme.onSurface,
                         fontWeight: FontWeight.bold,
                         fontSize: 15,
                       ),
@@ -85,8 +85,8 @@ class BureauCarousel extends StatelessWidget {
                           child: Text(
                             bureauData[index]['description'],
                             overflow: TextOverflow.ellipsis,
-                            style: const TextStyle(
-                              color: Colors.white,
+                            style:  TextStyle(
+                              color: Theme.of(context).colorScheme.onSurface,
                               fontSize: 12,
                             ),
                           ),

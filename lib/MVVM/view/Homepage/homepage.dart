@@ -35,40 +35,40 @@ class Homepage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  const SizedBox(height: 20),
-                  const AppSearchBar(),
+                  // const SizedBox(height: 20),
+                  // const AppSearchBar(),
                   const SizedBox(height: 20),
                   const BannerCarousel(),
                   const SizedBox(height: 20),
-                  const Text(
+                   Text(
                     "Welcome to AICTE",
                     style: TextStyle(
                         fontSize: 18,
-                        color: Colors.white,
+                        color: Theme.of(context).colorScheme.onSurface,
                         fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 6),
-                  const Text(
+                   Text(
                     "All India Council for Technical Education (AICTE) was set up in November 1945 as a national-level Apex Advisory Body to conduct a survey on the facilities available for technical education and to promote development in the country in a coordinated and integrated manner.",
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 12, color: Colors.white),
+                    style: TextStyle(fontSize: 12, color: Theme.of(context).colorScheme.onSurface),
                   ),
                   const SizedBox(height: 35),
                   const BannerChips(),
                   const SizedBox(height: 35),
-                  titleText("Quick Links"),
+                  titleText("Quick Links", context),
                   const SizedBox(height: 15),
                   const QuickLinkChips(),
                   const SizedBox(height: 35),
-                  titleText("Announcement"),
+                  titleText("Announcement", context),
                   const SizedBox(height: 15),
                   const AnnouncementChip(),
                   const SizedBox(height: 35),
-                  titleText("Bureaus"),
+                  titleText("Bureaus", context),
                   const SizedBox(height: 15),
                   const BureauCarousel(),
                   const SizedBox(height: 35),
-                  titleText("Initiatives & Schemes"),
+                  titleText("Initiatives & Schemes", context),
                   const SizedBox(height: 15),
                   SizedBox(
                     width: size.width,
@@ -128,14 +128,14 @@ class Homepage extends StatelessWidget {
     );
   }
 
-  Widget titleText(String title) {
+  Widget titleText(String title, context) {
     return Row(
       children: [
         Text(
           title,
-          style: const TextStyle(
+          style:  TextStyle(
             fontWeight: FontWeight.bold,
-            color: Colors.white,
+            color: Theme.of(context).colorScheme.onSurface,
             fontSize: 17,
           ),
         ),

@@ -47,12 +47,12 @@ class _InitiativesOverviewViewState extends State<InitiativesOverviewView> {
                     ),
                   ),
                   const SizedBox(height: 15),
-                  const Text(
+                   Text(
                     "Read about the initiatives undertaken by AICTE to promote technical education",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 15,
-                      color: Colors.white,
+                      color: Theme.of(context).colorScheme.onSurface,
                       fontStyle: FontStyle.italic,
                     ),
                   ),
@@ -78,7 +78,7 @@ class _InitiativesOverviewViewState extends State<InitiativesOverviewView> {
                       Container(
                         width: size.width,
                         decoration: BoxDecoration(
-                          color: Colors.black.withOpacity(0.15),
+                          color: Theme.of(context).colorScheme.background,
                           borderRadius: const BorderRadius.only(
                             bottomLeft: Radius.circular(15),
                             bottomRight: Radius.circular(15),
@@ -88,23 +88,23 @@ class _InitiativesOverviewViewState extends State<InitiativesOverviewView> {
                             vertical: 10, horizontal: 12),
                         child: Column(
                           children: [
-                            const Row(
+                             Row(
                               children: [
                                 Text(
                                   "AICTE Student Learning Assessment Project",
                                   style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.bold,
-                                    color: Colors.white,
+                                    color: Theme.of(context).colorScheme.onSurface,
                                   ),
                                 ),
                               ],
                             ),
                             const SizedBox(height: 5),
-                            const Text(
+                             Text(
                               "The AICTE-SLA project is designed to measure the benchmark levels and gains in academic and aptitude skills by the students in technical programs and to understand the various factors that affect skill development of students in Technical Institutes across India.",
                               style: TextStyle(
-                                color: Colors.white,
+                                color: Theme.of(context).colorScheme.onSurface,
                                 fontSize: 13,
                               ),
                             ),
@@ -158,10 +158,10 @@ class _InitiativesOverviewViewState extends State<InitiativesOverviewView> {
                                 Icons.chevron_left_sharp,
                                 color: Color(0xffF75700),
                               ),
-                              label: const Text(
+                              label:  Text(
                                 "Prev",
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  color: Theme.of(context).colorScheme.onSurface,
                                 ),
                               ),
                             )
@@ -176,10 +176,10 @@ class _InitiativesOverviewViewState extends State<InitiativesOverviewView> {
                                   }
                                 });
                               },
-                              icon: const Text(
+                              icon:  Text(
                                 "Next",
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  color: Theme.of(context).colorScheme.onSurface,
                                 ),
                               ),
                               label: const Icon(

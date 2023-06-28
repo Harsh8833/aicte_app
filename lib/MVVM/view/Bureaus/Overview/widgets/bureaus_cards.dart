@@ -24,7 +24,7 @@ class BureausCard extends StatelessWidget {
                       padding: const EdgeInsets.symmetric( horizontal: 8),
 
         decoration: BoxDecoration(
-            color: Colors.white12, borderRadius: BorderRadius.circular(10)),
+            color: Theme.of(context).colorScheme.background, borderRadius: BorderRadius.circular(10)),
         width: size.width * 0.8,
         child: Column(children: [
           Image.asset(bureausCardModel.image),
@@ -43,14 +43,14 @@ class BureausCard extends StatelessWidget {
           const SizedBox(height: 10),
           Text(
             bureausCardModel.subtitle,
-            style: const TextStyle(
-                fontSize: 16, color: Colors.white, fontWeight: FontWeight.bold),
+            style:  TextStyle(
+                fontSize: 16, color: Theme.of(context).colorScheme.onSurface, fontWeight: FontWeight.bold),
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 10),
           Text(
             bureausCardModel.description,
-            style: const TextStyle(fontSize: 16, color: Colors.white),
+            style:  TextStyle(fontSize: 16, color: Theme.of(context).colorScheme.onSurface),
             textAlign: TextAlign.center,
           ),
         ]),
