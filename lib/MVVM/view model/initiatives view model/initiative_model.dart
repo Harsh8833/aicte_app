@@ -26,7 +26,7 @@ List<InitiativeCardModel> initiativeCardData1 = [
     Assets.initiatives5,
     "Jal Shakti Abhiyan",
     "The scheme “Jal Shakti Abhiyan” with the theme, “Sanchay Jal Behtar Kal”, has commenced from 1st July 2019",
-    "https://aicte-india.org/sites/default/files/Jal%20Shakti.pdf",
+    "https://aicte-india.org/sites/default/files/Jal%20Shakti.pdf", //TODO PDF view to be added
   )
 ];
 

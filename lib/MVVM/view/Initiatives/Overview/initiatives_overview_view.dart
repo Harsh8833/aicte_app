@@ -198,7 +198,11 @@ class _InitiativesOverviewViewState extends State<InitiativesOverviewView> {
                     children: [
                       ElevatedButton.icon(
                         onPressed: () {
-                          
+                          final url = Uri.parse("https://aicte-india.org/news");
+                          launchUrl(
+                            url,
+                            mode: LaunchMode.inAppWebView,
+                          );
                         },
                         icon: const Icon(
                           Icons.add,

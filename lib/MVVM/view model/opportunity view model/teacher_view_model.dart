@@ -8,7 +8,7 @@ List<OpportunityCardModel> teacherViewData = [
     links: [
       {
         'text': "General Guidelines",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/guidlines%20upload%20website.pdf",
       },
     ],
   ),
@@ -20,7 +20,7 @@ List<OpportunityCardModel> teacherViewData = [
     links: [
       {
         'text': "Scheme Document",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/guidlines%20upload%20website.pdf",
       },
     ],
   ),
@@ -31,7 +31,7 @@ List<OpportunityCardModel> teacherViewData = [
     links: [
       {
         'text': "Scheme Document",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/VISVESVARAYA%20BEST%20TEACHER%20AWARDS.pdf",
       },
     ],
   ),
@@ -42,19 +42,19 @@ List<OpportunityCardModel> teacherViewData = [
     links: [
       {
         'text': "Scheme Document",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/VISVESVARAYA%20BEST%20TEACHER%20AWARDS.pdf",
       },
       {
         'text': "Annexure A",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/VISVESVARAYA%20BEST%20TEACHER%20AWARDS.pdf",
       },
       {
         'text': "Steps to Apply",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/STEPS%20TO%20APPLY%20FOR%20QIP.pdf",
       },
       {
         'text': "Application Form ( PDF/ Word)",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/Application%20form%20for%20setting%20up%20of%20New%20QIP%20Center.pdf",
       },
     ],
   ),
@@ -65,19 +65,19 @@ List<OpportunityCardModel> teacherViewData = [
     links: [
       {
         'text': "General Instructions",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/AQIS_General_Instructions%202017_18.pdf",
       },
       {
         'text': "Scheme Document",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/AQIS_General_Instructions%202017_18.pdf",
       },
       {
         'text': "Click here to Apply",
-        'link': "",
+        'link': "http://portal.aicte-india.org/partnerportal_enu/start.swe",
       },
       {
         'text': "Format of Mandatory Documents",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/RPS%20formate%20of%20documents.pdf",
       },
     ],
   ),
@@ -88,19 +88,19 @@ List<OpportunityCardModel> teacherViewData = [
     links: [
       {
         'text': "Scheme Document",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/QIP%20Foreign%20%20scheme%20document.pdf",
       },
       {
         'text': "Application Form",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/QIP%20Foreign%20%20scheme%20document.pdf",
       },
       {
         'text': "Undertaking Form",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/QIP%20%28FU%29%20-%20format%20for%20undertaking.pdf",
       },
       {
         'text': "FAQs",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/QIP%20%28FU%29%20-%20format%20for%20undertaking.pdf",
       },
     ],
   ),
@@ -111,7 +111,7 @@ List<OpportunityCardModel> teacherViewData = [
     links: [
       {
         'text': "Scheme Document",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/QIP%20%28FU%29%20-%20format%20for%20undertaking.pdf",
       },
     ],
   ),
@@ -122,19 +122,19 @@ List<OpportunityCardModel> teacherViewData = [
     links: [
       {
         'text': "General Instructions",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/AQIS_General_Instructions%202017_18.pdf",
       },
       {
         'text': "Scheme Document",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/Scheme%20Document%20%20STTP.pdf",
       },
       {
         'text': "User Manual",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/Scheme%20Document%20%20STTP.pdf",
       },
       {
         'text': "Click Here to Apply",
-        'link': "",
+        'link': "http://portal.aicte-india.org/partnerportal_enu/start.swe",
       },
     ],
   ),
@@ -146,7 +146,7 @@ List<OpportunityCardModel> teacherViewData = [
     links: [
       {
         'text': "Scheme Document",
-        'link': "",
+        'link': "https://aicte-india.org/sites/default/files/Scheme%20Document%20PTIs.pdf",
       },
     ],
   ),
@@ -168,7 +168,7 @@ List<OpportunityCardModel> teacherViewData = [
     links: [
       {
         'text': "Scheme Document",
-        'link': "",
+        'link': "https://aicte-india.org/sites/default/files/Scheme%20Document%20TU.pdf",
       },
     ],
   ),
@@ -179,19 +179,19 @@ List<OpportunityCardModel> teacherViewData = [
     links: [
       {
         'text': "General Instructions",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/AQIS_General_Instructions%202017_18.pdf",
       },
       {
         'text': "Scheme Document",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/AQIS_General_Instructions%202017_18.pdf",
       },
       {
         'text': "User Manual",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/RIFD/TGS.pdf",
       },
       {
         'text': "Click here to apply",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/RIFD/TGS.pdf",
       },
     ],
   ),
@@ -202,23 +202,23 @@ List<OpportunityCardModel> teacherViewData = [
     links: [
       {
         'text': "Application Form",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/Application%20Form_0.pdf",
       },
       {
         'text': "Guidelines",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/Guidelines_0.pdf",
       },
       {
         'text': "Steps to apply",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/Guidelines_0.pdf",
       },
       {
         'text': "Labwise Vacancies for 2017-18",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/Vacany%20Intake.pdf",
       },
       {
         'text': "Read More",
-        'link': "",
+        'link': "https://inae.in/aicte-inae-trf-scheme/",
       },
     ],
   ),
@@ -229,19 +229,19 @@ List<OpportunityCardModel> teacherViewData = [
     links: [
       {
         'text': "Application Form",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/Application%20Form.pdf",
       },
       {
         'text': "Scheme Document",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/Application%20Form.pdf",
       },
       {
         'text': "Steps to Apply",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/2.%20STEPS%20TO%20APPLY%20FOR%20AICTE-INAE%20DVP.pdf",
       },
       {
         'text': "Read More",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/2.%20STEPS%20TO%20APPLY%20FOR%20AICTE-INAE%20DVP.pdf",
       },
     ],
   ),
@@ -252,26 +252,26 @@ List<OpportunityCardModel> teacherViewData = [
     links: [
       {
         'text': "Scheme Document",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/Scheme%20Document%20AICTE%20induction-refresher%20Scheme%20Document.pdf",
       },
     ],
   ),
   OpportunityCardModel(
-    title: "title",
+    title: "AICTE-Technical Book Writing & Translation",
     description:
         "To promote use of 'Scheduled Regional Language' in Technical Education for creating knowledge base in local language and to encourage creation of treasure of latest technical knowledge incorporating the newest developments by grant of financial support to the distinguished faculty/writers/translators.",
     links: [
       {
         'text': "Scheme Document",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/WTB%20%28Final%29%20%281%29.pdf",
       },
       {
         'text': "Application Form",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/WTB%20%28Final%29%20%281%29.pdf",
       },
       {
         'text': "Steps to Apply",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/STEPS%20TO%20APPLY%20FOR%20TBW.pdf",
       },
     ],
   ),
@@ -282,7 +282,7 @@ List<OpportunityCardModel> teacherViewData = [
     links: [
       {
         'text': "Scheme Document",
-        'link': "",
+        'link': "https://www.aicte-india.org/sites/default/files/Scheme%20Document%20AICTE%20induction-refresher%20Scheme%20Document.pdf",
       },
     ],
   ),

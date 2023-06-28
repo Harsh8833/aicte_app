@@ -27,4 +27,9 @@ List<NewsCardModel> newsCardData = [
     "Wednesday, June 3, 2020",
     "https://www.aicte-india.org/Initiatives/ukieri2020",
   ),
+  NewsCardModel(
+    "From addressing underemployment among engineering graduates to handing them degrees only on completion of four months of internship.",
+    "Sunday, June 25, 2017",
+    "http://timesofindia.indiatimes.com/home/education/news/internships-to-be-made-must-for-engineering-aicte-chairman/articleshow/59764407.cms",
+  ),
 ];
