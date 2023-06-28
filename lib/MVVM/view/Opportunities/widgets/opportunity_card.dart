@@ -66,8 +66,8 @@ class OpportunityCard extends StatelessWidget {
                     Text(
                       ele['text']!,
                       style: const TextStyle(
-                        color: Color(0xffF75700),
-                      ),
+                          color: Color(0xffF75700),
+                          fontWeight: FontWeight.w500),
                     ),
                   ],
                 );

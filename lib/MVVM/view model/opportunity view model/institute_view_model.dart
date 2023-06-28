@@ -94,4 +94,102 @@ List<OpportunityCardModel> instituteViewData = [
       },
     ],
   ),
+  OpportunityCardModel(
+    title: "E- SHODH SINDHU(SUBSCRIPTION TO E-JOURNALS)",
+    description:
+        "Free access to e-Journals/ e-Resources to AICTE approved Government/ Government-Aided technical institutes is facilitated through INFLIBNET, subscription of which is paid by AICTE.",
+    links: [
+      {
+        'text': "Scheme Document",
+        'link': "",
+      },
+      {
+        'text': "Steps to Apply",
+        'link': "",
+      },
+      {
+        'text': "Application Form",
+        'link': "",
+      },
+      {
+        'text': "Mandate Form",
+        'link': "",
+      },
+    ],
+  ),
+  OpportunityCardModel(
+    title:
+        "SCHEME FOR CAMPUS ACCOMMODATION & FACILITIES ENHANCING SOCIAL EXPERIENCE (CAFES)",
+    description:
+        "The scheme aims to support Government/ Government-aided engineering colleges/ University departments/Polytechnics for construction of girls/boys hostels for students /researchers belonging to SC&ST/ Differently abled/ NER students. Total funding is Rs 3.25 crore, which to be provided to institute to complete the project within the period of 3 years.",
+    links: [
+      {
+        'text': "Scheme Document",
+        'link': "",
+      },
+      {
+        'text': "Click Here to Apply",
+        'link': "",
+      },
+      {
+        'text': "How to Apply",
+        'link': "",
+      },
+      {
+        'text': "Annexure",
+        'link': "",
+      },
+      {
+        'text': "User Manual",
+        'link': "",
+      },
+    ],
+  ),
+  OpportunityCardModel(
+    title:
+        "AICTE- GRANT FOR AUGMENTING INFRASTRUCTURE IN NORTH EASTERN REGION (GAINER)",
+    description:
+        "To enhance the functional efficiency of the technical institutes located in far-flung areas of North East India, AICTE has launched a scheme for providing logistics support to the technical institutes of NER by extending financial assistance for construction of rain water harvesting system, alternative power support & availability/connection of internet facility",
+    links: [
+      {
+        'text': "Scheme Document",
+        'link': "",
+      },
+      {
+        'text': "Steps to Apply",
+        'link': "",
+      },
+      {
+        'text': "Application Form",
+        'link': "",
+      },
+    ],
+  ),
+  OpportunityCardModel(
+    title: "MARGDARSHAN INITIATIVE",
+    description:
+        "Part 1 : Margdarshaks \nSenior academicians (serving or superannuated) shall be nominated as Margdarshak(MD) to act as individual mentors for guiding beneficiary institutes to achieve the NBA accreditation and enhance the quality of technical education. \n\nPart 2 : Margdarshan Institute \nA well-established AICTE approved institute referred to as Margdarshan Institute or Mentor Institute (MI) is supported with an objective to mentor up to 10 nearby institutes in achieving the NBA accreditation.",
+    links: [
+      {
+        'text': "Scheme Document",
+        'link': "",
+      },
+      {
+        'text': "Present Status",
+        'link': "",
+      },
+      {
+        'text': "Additional FAQs",
+        'link': "",
+      },
+      {
+        'text': " PPT- Margdarshan Initiative",
+        'link': "",
+      },
+      {
+        'text': "Flip Book",
+        'link': "",
+      },
+    ],
+  )
 ];
