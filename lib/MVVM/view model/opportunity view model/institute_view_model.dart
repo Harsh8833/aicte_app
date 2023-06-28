@@ -8,19 +8,21 @@ List<OpportunityCardModel> instituteViewData = [
     links: [
       {
         'text': "Website Link",
-        'link': "",
+        'link': "https://idealnet.aicte-india.org/",
       },
       {
         'text': "Idea-Lab (e-Flipbook)",
-        'link': "",
+        'link': "https://www.aicte-india.org/flipbook/idealab/index.html",
       },
       {
         'text': "Advertisement",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/IDEA%20LAB%20Advertisement%204.pdf",
       },
       {
-        'text': " User Manual",
-        'link': "",
+        'text': "User Manual",
+        'link':
+            "http://www.aicte-india.org/sites/default/files/IDC/idealab/AICTE%20-%20IDEA%20LAB%20User%20Manual.pdf",
       },
     ],
   ),
@@ -32,19 +34,23 @@ List<OpportunityCardModel> instituteViewData = [
     links: [
       {
         'text': "Scheme Document",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/IDC/spices_scheme_document.pdf",
       },
       {
         'text': "FAQ's",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/IDC/SPICES%20FAQs.pdf",
       },
       {
         'text': "User Manual",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/User%20Manual%20for%20SPICES%20scheme_compressed.pdf",
       },
       {
         'text': "Advertisement",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/SPICES%20Advertisement%202022-2023_0.jpg",
       },
     ],
   ),
@@ -55,23 +61,27 @@ List<OpportunityCardModel> instituteViewData = [
     links: [
       {
         'text': "Scheme Document",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/IDC/GOC%20Scheme%20Doc%20Oct_2022.pdf",
       },
       {
         'text': "User Manual",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/User%20Manual%20for%20GOC%20scheme_compressed.pdf",
       },
       {
-        'text': "Proformas",
-        'link': "",
+        'text': "Proforma",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/IDC/Proformas.pdf",
       },
       {
         'text': "MoE Guidelines (Annexure I & II)",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/IDC/MoE%20Guidelines%20(Annexure%20I%20&%20II).pdf",
       },
       {
-        'text': " Click here to apply",
-        'link': "",
+        'text': "Click here to apply",
+        'link': "http://portal.aicte-india.org/partnerportal_enu/start.swe",
       },
     ],
   ),
@@ -82,15 +92,18 @@ List<OpportunityCardModel> instituteViewData = [
     links: [
       {
         'text': "Scheme Document",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/modrob/MODROB%20Scheme%20Guidelines%2024_12_2021.pdf",
       },
       {
         'text': "FAQ's",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/modrob/MODROB%20FAQ'S.pdf",
       },
       {
         'text': "User Manual",
-        'link': "",
+        'link':
+            "http://www.aicte-india.org/sites/default/files/modrob/SOP%20OF%20MODROB%20Scheme.pdf",
       },
     ],
   ),
@@ -101,19 +114,23 @@ List<OpportunityCardModel> instituteViewData = [
     links: [
       {
         'text': "Scheme Document",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/ess/ESS%20Scheme%20Document.pdf",
       },
       {
         'text': "Steps to Apply",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/ess/STEPES%20TO%20APPLY%20(ESS).pdf",
       },
       {
         'text': "Application Form",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/ess/ESS%20Application%20Form.pdf",
       },
       {
         'text': "Mandate Form",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/ESHODH%20Mandate.pdf",
       },
     ],
   ),
@@ -125,23 +142,27 @@ List<OpportunityCardModel> instituteViewData = [
     links: [
       {
         'text': "Scheme Document",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/CAFES/CAFES%20SCHEME%20DOCUMENT%202020-21_20_01_21.pdf",
       },
       {
         'text': "Click Here to Apply",
-        'link': "",
+        'link': "http://portal.aicte-india.org/partnerportal_enu/start.swe",
       },
       {
         'text': "How to Apply",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/CAFES/How%20to%20apply(CAFES).pdf",
       },
       {
         'text': "Annexure",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/CAFES/CAFES_Annexures.pdf",
       },
       {
         'text': "User Manual",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/CAFES/User%20Manual%20for%20CAFES%20scheme.pdf",
       },
     ],
   ),
@@ -153,15 +174,18 @@ List<OpportunityCardModel> instituteViewData = [
     links: [
       {
         'text': "Scheme Document",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/GAINER%20Scheme%20Document.pdf",
       },
       {
         'text': "Steps to Apply",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/IDC/Steps%20to%20Apply.pdf",
       },
       {
         'text': "Application Form",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/IDC/Application%20form%20GAINER_ALL.pdf",
       },
     ],
   ),
@@ -172,23 +196,27 @@ List<OpportunityCardModel> instituteViewData = [
     links: [
       {
         'text': "Scheme Document",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/margdarshak/Guideline%20Margdarshan%20Inititative_12.05.2022_FINAL.pdf",
       },
       {
         'text': "Present Status",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/IDC/Present%20Status.pdf",
       },
       {
         'text': "Additional FAQs",
-        'link': "",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/margdarshak/Additional%20FAQs.pdf",
       },
       {
-        'text': " PPT- Margdarshan Initiative",
-        'link': "",
+        'text': "PPT- Margdarshan Initiative",
+        'link':
+            "https://www.aicte-india.org/sites/default/files/margdarshak/PPT-%20Margdarshan%20Initiative.pdf",
       },
       {
         'text': "Flip Book",
-        'link': "",
+        'link': "https://www.aicte-india.org/flipbook/Margdarshan/#p=1",
       },
     ],
   )
