@@ -10,6 +10,7 @@ import 'package:aicte_app/MVVM/view/Bureaus/Finance/finance_view.dart';
 import 'package:aicte_app/MVVM/view/Bureaus/Overview/bureaus_overview_view.dart';
 import 'package:aicte_app/MVVM/view/Bureaus/Regulation/regulation_view.dart';
 import 'package:aicte_app/MVVM/view/Bureaus/Scholarships%20&%20Grants/scholarships_and_grants_view.dart';
+import 'package:aicte_app/MVVM/view/Initiatives/Overview/initiatives_overview_view.dart';
 import 'package:aicte_app/MVVM/view/Initiatives/Smart%20India%20Hackathon/sih_view.dart';
 import 'package:aicte_app/MVVM/view/Opportunities/faculty_opportunities.dart';
 import 'package:aicte_app/MVVM/view/Opportunities/institutional_opportunities.dart';
@@ -54,7 +55,7 @@ class NavigationServices {
           navLink: NavLinks.initiatives,
           title: "INITIATIVES",
           subMenu: [
-            SubMenu(title: "Overview", route: BureausOverviewView.route),
+            SubMenu(title: "Overview", route: InitiativesOverviewView.route),
             SubMenu(title: "Startup Contest", route: AdministrationView.route),
             SubMenu(
                 title: "AICTE Internship Portal",

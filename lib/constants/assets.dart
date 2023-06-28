@@ -44,4 +44,17 @@ class Assets {
   //About Us
   static const String about1 = "assets/images/about.png";
   static const String about2 = "assets/images/about2.png";
+
+  //Initiatives
+  static const String initiatives1 = "assets/images/initiatives1.jpg";
+  static const String initiatives2 = "assets/images/initiatives2.jpg";
+  static const String initiatives3 = "assets/images/initiatives3.jpg";
+  static const String initiatives4 = "assets/images/initiatives4.png";
+  static const String initiatives5 = "assets/images/initiatives5.jpg";
+  static const String initiatives6 = "assets/images/initiatives6.jpg";
+  static const String initiatives7 = "assets/images/initiatives7.jpg";
+  static const String initiatives8 = "assets/images/initiatives8.jpg";
+  static const String initiatives9 = "assets/images/initiatives9.jpg";
+  static const String initiatives10 = "assets/images/initiatives10.jpg";
+  static const String initiatives11 = "assets/images/initiatives11.jpg";
 }
