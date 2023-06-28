@@ -18,6 +18,8 @@ class AnnouncementChip extends StatelessWidget {
       spacing: 6,
       children: announcementChips.map((e) {
         return Chip(
+          // elevation: 4,
+          // shadowColor: Theme.of(context).colorScheme.onBackground,
           padding: const EdgeInsets.all(8),
           labelPadding: const EdgeInsets.symmetric(horizontal: 3),
           avatar: e == "More"

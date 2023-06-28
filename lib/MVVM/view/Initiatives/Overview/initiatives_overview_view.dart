@@ -47,7 +47,7 @@ class _InitiativesOverviewViewState extends State<InitiativesOverviewView> {
                     ),
                   ),
                   const SizedBox(height: 15),
-                   Text(
+                  Text(
                     "Read about the initiatives undertaken by AICTE to promote technical education",
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -88,20 +88,21 @@ class _InitiativesOverviewViewState extends State<InitiativesOverviewView> {
                             vertical: 10, horizontal: 12),
                         child: Column(
                           children: [
-                             Row(
+                            Row(
                               children: [
                                 Text(
                                   "AICTE Student Learning Assessment Project",
                                   style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.bold,
-                                    color: Theme.of(context).colorScheme.onSurface,
+                                    color:
+                                        Theme.of(context).colorScheme.onSurface,
                                   ),
                                 ),
                               ],
                             ),
                             const SizedBox(height: 5),
-                             Text(
+                            Text(
                               "The AICTE-SLA project is designed to measure the benchmark levels and gains in academic and aptitude skills by the students in technical programs and to understand the various factors that affect skill development of students in Technical Institutes across India.",
                               style: TextStyle(
                                 color: Theme.of(context).colorScheme.onSurface,
@@ -158,10 +159,11 @@ class _InitiativesOverviewViewState extends State<InitiativesOverviewView> {
                                 Icons.chevron_left_sharp,
                                 color: Color(0xffF75700),
                               ),
-                              label:  Text(
+                              label: Text(
                                 "Prev",
                                 style: TextStyle(
-                                  color: Theme.of(context).colorScheme.onSurface,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
                                 ),
                               ),
                             )
@@ -176,10 +178,11 @@ class _InitiativesOverviewViewState extends State<InitiativesOverviewView> {
                                   }
                                 });
                               },
-                              icon:  Text(
+                              icon: Text(
                                 "Next",
                                 style: TextStyle(
-                                  color: Theme.of(context).colorScheme.onSurface,
+                                  color:
+                                      Theme.of(context).colorScheme.onSurface,
                                 ),
                               ),
                               label: const Icon(
@@ -214,6 +217,12 @@ class _InitiativesOverviewViewState extends State<InitiativesOverviewView> {
                             fontSize: 15,
                             color: Color(0xffF75700),
                           ),
+                        ),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.white,
+                          shadowColor:
+                              Theme.of(context).colorScheme.onBackground,
+                          elevation: 5,
                         ),
                       ),
                     ],

@@ -27,7 +27,6 @@ class AicteCells extends StatelessWidget {
         'text': "Indian Knowledge System(IKS)",
         'link': "https://iksindia.org/",
       },
-      
     ];
 
     return Wrap(
@@ -44,6 +43,8 @@ class AicteCells extends StatelessWidget {
             );
           },
           child: Chip(
+            shadowColor: Theme.of(context).colorScheme.onBackground,
+            elevation: 5,
             padding: const EdgeInsets.all(8),
             labelPadding: const EdgeInsets.symmetric(horizontal: 5),
             avatar: e['text'] == "More"

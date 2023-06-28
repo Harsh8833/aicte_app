@@ -1,4 +1,5 @@
 import 'package:aicte_app/MVVM/view/About%20Us/widgets/title_tile.dart';
+import 'package:aicte_app/MVVM/view/PDF%20Viewer/pdf_viewer.dart';
 import 'package:aicte_app/constants/dimens.dart';
 import 'package:aicte_app/widgets/app_scaffold.dart';
 import 'package:aicte_app/widgets/header_logo.dart';
@@ -69,11 +70,12 @@ class SIHView extends StatelessWidget {
                 const SizedBox(height: 5),
                 GestureDetector(
                   onTap: () {
-                    //TODO Change the link to the download link of the PDF
-                    final url = Uri.parse("https://sih.gov.in/");
-                    launchUrl(
-                      url,
-                      mode: LaunchMode.inAppWebView,
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => const PDFViewerScreen(
+                            pdfUrl:
+                                "https://www.aicte-india.org/sites/default/files/MHRD-AICTE%20SIH2019%20Brochure.pdf"),
+                      ),
                     );
                   },
                   child: Chip(

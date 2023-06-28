@@ -36,9 +36,18 @@ class BannerChips extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(5),
-              color: Colors.white,
-            ),
+                borderRadius: BorderRadius.circular(5),
+                color: Colors.white,
+                boxShadow: [
+                  BoxShadow(
+                    offset: const Offset(0, 4),
+                    blurRadius: 4,
+                    color: Theme.of(context)
+                        .colorScheme
+                        .onBackground
+                        .withOpacity(0.25),
+                  )
+                ]),
             child: Text(
               ele['title']!,
               textAlign: TextAlign.center,

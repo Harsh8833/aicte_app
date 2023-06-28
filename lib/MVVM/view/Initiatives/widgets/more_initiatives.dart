@@ -1,4 +1,5 @@
 import 'package:aicte_app/MVVM/view%20model/bureaus%20view%20model/initiative_model.dart';
+import 'package:aicte_app/MVVM/view/PDF%20Viewer/pdf_viewer.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -50,7 +51,7 @@ class MoreInitiatives extends StatelessWidget {
                       children: [
                         Text(
                           listData[count][index].title,
-                          style:  TextStyle(
+                          style: TextStyle(
                             fontSize: 15,
                             fontWeight: FontWeight.bold,
                             color: Theme.of(context).colorScheme.onSurface,
@@ -61,7 +62,7 @@ class MoreInitiatives extends StatelessWidget {
                     const SizedBox(height: 5),
                     Text(
                       listData[count][index].description,
-                      style:  TextStyle(
+                      style: TextStyle(
                         color: Theme.of(context).colorScheme.onSurface,
                         fontSize: 13,
                       ),
@@ -72,11 +73,21 @@ class MoreInitiatives extends StatelessWidget {
                       children: [
                         GestureDetector(
                           onTap: () {
-                            final url = Uri.parse(listData[count][index].link);
-                            launchUrl(
-                              url,
-                              mode: LaunchMode.inAppWebView,
-                            );
+                            if (listData[count][index].link.contains('.pdf')) {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => PDFViewerScreen(
+                                      pdfUrl: listData[count][index].link),
+                                ),
+                              );
+                            } else {
+                              final url =
+                                  Uri.parse(listData[count][index].link);
+                              launchUrl(
+                                url,
+                                mode: LaunchMode.inAppWebView,
+                              );
+                            }
                           },
                           child: Container(
                             decoration: BoxDecoration(

@@ -4,6 +4,7 @@ import 'package:aicte_app/constants/dimens.dart';
 import 'package:aicte_app/widgets/app_scaffold.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import 'widgets/nav_tiles.dart';
 
@@ -11,7 +12,6 @@ class NavigationMenu extends StatelessWidget {
   static const route = '/navscreen';
   const NavigationMenu({super.key});
 
-  
   @override
   Widget build(BuildContext context) {
     return AppScaffold(
@@ -27,7 +27,7 @@ class NavigationMenu extends StatelessWidget {
                 width: MediaQuery.of(context).size.width,
               ),
               Image.asset(
-                Assets.appLogo,
+                Assets.appLogo2,
                 height: 100,
               ),
               // SizedBox(height: 20),
@@ -37,7 +37,7 @@ class NavigationMenu extends StatelessWidget {
                 itemCount: context.read<NavigationViewModel>().navLinks.length,
                 itemBuilder: (context, index) {
                   return NavTile(
-                   index: index,
+                    index: index,
                   );
                 },
               ),
@@ -49,11 +49,20 @@ class NavigationMenu extends StatelessWidget {
                     height: 49,
                     width: 49,
                     child: IconButton.filled(
-                      onPressed: () {},
+                      onPressed: () {
+                        final url =
+                            Uri.parse("https://www.facebook.com/officialaicte");
+                        launchUrl(
+                          url,
+                          mode: LaunchMode.platformDefault,
+                        );
+                      },
                       icon: Image.asset(Assets.facebook),
                       style: IconButton.styleFrom(
-                        backgroundColor: Colors.white,
-                      ),
+                          shadowColor:
+                              Theme.of(context).colorScheme.onBackground,
+                          backgroundColor: Colors.white,
+                          elevation: 5),
                     ),
                   ),
                   const SizedBox(width: 20),
@@ -61,10 +70,19 @@ class NavigationMenu extends StatelessWidget {
                     height: 49,
                     width: 49,
                     child: IconButton.filled(
-                      onPressed: () {},
+                      onPressed: () {
+                        final url =
+                            Uri.parse("https://twitter.com/AICTE_INDIA");
+                        launchUrl(
+                          url,
+                          mode: LaunchMode.platformDefault,
+                        );
+                      },
                       icon: Image.asset(Assets.twitter),
                       style: IconButton.styleFrom(
                         backgroundColor: Colors.white,
+                        shadowColor: Theme.of(context).colorScheme.onBackground,
+                        elevation: 5,
                       ),
                     ),
                   ),

@@ -5,8 +5,7 @@ import 'package:aicte_app/constants/dimens.dart';
 import 'package:aicte_app/widgets/app_scaffold.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-import 'widgets/nav_tiles.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class NavigationSubMenu extends StatelessWidget {
   static const route = '/navsubmenuscreen';
@@ -27,12 +26,12 @@ class NavigationSubMenu extends StatelessWidget {
                 width: MediaQuery.of(context).size.width,
               ),
               Image.asset(
-                Assets.appLogo,
+                Assets.appLogo2,
                 height: 100,
               ),
               SizedBox(height: 20),
               Container(
-                color:  Color(0xFFF75700),
+                color: Color(0xFFF75700),
                 height: 60,
                 margin: const EdgeInsets.symmetric(horizontal: 8),
                 child: Center(
@@ -43,9 +42,9 @@ class NavigationSubMenu extends StatelessWidget {
                         .title
                         .toString(),
                     style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                        ),
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
@@ -71,10 +70,19 @@ class NavigationSubMenu extends StatelessWidget {
                     height: 49,
                     width: 49,
                     child: IconButton.filled(
-                      onPressed: () {},
+                      onPressed: () {
+                        final url =
+                            Uri.parse("https://www.facebook.com/officialaicte");
+                        launchUrl(
+                          url,
+                          mode: LaunchMode.platformDefault,
+                        );
+                      },
                       icon: Image.asset(Assets.facebook),
                       style: IconButton.styleFrom(
                         backgroundColor: Colors.white,
+                        shadowColor: Theme.of(context).colorScheme.onBackground,
+                        elevation: 5,
                       ),
                     ),
                   ),
@@ -83,10 +91,19 @@ class NavigationSubMenu extends StatelessWidget {
                     height: 49,
                     width: 49,
                     child: IconButton.filled(
-                      onPressed: () {},
+                      onPressed: () {
+                        final url =
+                            Uri.parse("https://twitter.com/AICTE_INDIA");
+                        launchUrl(
+                          url,
+                          mode: LaunchMode.platformDefault,
+                        );
+                      },
                       icon: Image.asset(Assets.twitter),
                       style: IconButton.styleFrom(
                         backgroundColor: Colors.white,
+                        shadowColor: Theme.of(context).colorScheme.onBackground,
+                        elevation: 5,
                       ),
                     ),
                   ),

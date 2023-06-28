@@ -5,9 +5,10 @@ class Assets {
 
   // splash screen assets
   static const String appLogo = "assets/images/primary_logo.png";
+  static const String appLogo2 = "assets/images/primary_logo2.png";
 
   // Indian Flag Illustration
-  static const String indianFlag = "assets/images/flag_illustration.png";
+  static const String indianFlag = "assets/images/flag_illustration2.png";
 
   static const String cor1 = "assets/images/cor1.png";
   static const String cor2 = "assets/images/cor2.png";

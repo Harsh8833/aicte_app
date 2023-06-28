@@ -13,7 +13,7 @@ class TitleTile extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: Dimens.horizontalPadding),
       child: Container(
-        color: const Color(0xFFD9D9D9).withOpacity(0.13),
+        color: Theme.of(context).colorScheme.secondary,
         width: MediaQuery.of(context).size.width,
         padding: EdgeInsets.symmetric(
             vertical: MediaQuery.of(context).size.height * 0.015),
@@ -21,9 +21,9 @@ class TitleTile extends StatelessWidget {
           child: Text(
             title,
             textAlign: TextAlign.center,
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 16,
-              color: Colors.white,
+              color: Theme.of(context).colorScheme.onSecondary,
               fontWeight: FontWeight.bold,
             ),
           ),
