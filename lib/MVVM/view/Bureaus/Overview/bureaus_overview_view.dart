@@ -25,7 +25,8 @@ class BureausOverviewView extends StatelessWidget {
         children: [
           const HeaderLogo(),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: Dimens.horizontalPadding),
+            padding: const EdgeInsets.symmetric(
+                horizontal: Dimens.horizontalPadding),
             child: Column(
               children: [
                 const TitleBar(title: "Overview"),
@@ -42,12 +43,15 @@ class BureausOverviewView extends StatelessWidget {
                       autoPlayCurve: Curves.easeOut,
                     ),
                     itemBuilder: (context, index, realIndex) {
-                      return BureausCard(bureausCardModel: context.read<BureausViewModel>().bureausData[index],);
+                      return BureausCard(
+                        bureausCardModel:
+                            context.read<BureausViewModel>().bureausData[index],
+                      );
                     }),
-                    const SizedBox(height: 20),
-                    const TitleBar(title: "AICTE Cells"),
-                    const AicteCells(),
-                    const SizedBox(height: 200),
+                const SizedBox(height: 20),
+                const TitleBar(title: "AICTE Cells"),
+                const AicteCells(),
+                const SizedBox(height: 200),
               ],
             ),
           ),

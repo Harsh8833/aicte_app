@@ -9,6 +9,7 @@ import 'package:aicte_app/MVVM/view/Bureaus/Overview/bureaus_overview_view.dart'
 import 'package:aicte_app/MVVM/view/Bureaus/Regulation/regulation_view.dart';
 import 'package:aicte_app/MVVM/view/Bureaus/Scholarships%20&%20Grants/scholarships_and_grants_view.dart';
 import 'package:aicte_app/MVVM/view/Homepage/homepage.dart';
+import 'package:aicte_app/MVVM/view/Initiatives/Overview/initiatives_overview_view.dart';
 import 'package:aicte_app/MVVM/view/Initiatives/Smart%20India%20Hackathon/sih_view.dart';
 import 'package:aicte_app/MVVM/view/Navigation/navigation_menu.dart';
 import 'package:aicte_app/MVVM/view/Navigation/navigation_submenu.dart';
@@ -83,6 +84,10 @@ class RouteGenerator {
         );
 
       // Initiatives Routes
+      case InitiativesOverviewView.route:
+        return MaterialPageRoute(
+          builder: (_) => const InitiativesOverviewView(),
+        );
       case SIHView.route:
         return MaterialPageRoute(
           builder: (_) => const SIHView(),
