@@ -11,8 +11,7 @@ class BureausCard extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
 
     return GestureDetector(
-       onTap: () {
-            //Works for every chip except more
+      onTap: () {
             final url = Uri.parse(bureausCardModel.link);
             launchUrl(
               url,

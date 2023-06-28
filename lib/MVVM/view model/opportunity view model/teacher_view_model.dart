@@ -16,7 +16,7 @@ List<OpportunityCardModel> teacherViewData = [
     title:
         "AICTE- NATIONAL INITIATIVE FOR TECHNICAL TEACHERS TRAINING (AICTE - NITTT)",
     description:
-        "In order to train the Inductee Teachers in AICTE approved / recognised institutions, National Initiative for Technical Teachers Training (for Inductee Teachers) has been launched. It imparts training to the Inductee Teachers in three phases. The first phase of the training programme for the Inductee Teachers shall be conducted in Massive Open Online Courses (MOOCs) mode for eight modules on the SWAYAM platform through the NITTT portal www.nittt.ac.in followed by one-month industrial internship (second phase) and then mentor based training (third phase).",
+        "In order to train the Inductee Teachers in AICTE approved / recognized institutions, National Initiative for Technical Teachers Training (for Inductee Teachers) has been launched. It imparts training to the Inductee Teachers in three phases. The first phase of the training programme for the Inductee Teachers shall be conducted in Massive Open Online Courses (MOOCs) mode for eight modules on the SWAYAM platform through the NITTT portal www.nittt.ac.in followed by one-month industrial internship (second phase) and then mentor based training (third phase).",
     links: [
       {
         'text': "Scheme Document",
