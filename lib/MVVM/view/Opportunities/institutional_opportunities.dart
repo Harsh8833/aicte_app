@@ -1,4 +1,6 @@
+import 'package:aicte_app/MVVM/model/Opportunity%20Model/opportunity_link_model.dart';
 import 'package:aicte_app/MVVM/view%20model/opportunity%20view%20model/institute_view_model.dart';
+import 'package:aicte_app/MVVM/view/Opportunities/widgets/opportunities_links.dart';
 import 'package:aicte_app/MVVM/view/Opportunities/widgets/opportunity_card.dart';
 import 'package:aicte_app/constants/dimens.dart';
 import 'package:aicte_app/widgets/app_scaffold.dart';
@@ -24,6 +26,7 @@ class InstitutionalOpportunities extends StatelessWidget {
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   const TitleBar(title: "Opportunities For Institutions"),
+                  OpportunitiesLinks(links: opportunitiesLinksForInstitutions),
                   const SizedBox(height: 20),
                   ListView.builder(
                     padding: EdgeInsets.zero,

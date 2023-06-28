@@ -19,7 +19,6 @@ class FacilityCard extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     return Container(
       width: size.width,
-      height: 125,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
         color: color,
