@@ -5,7 +5,7 @@ enum NavLinks {
   initiatives,
   schemes,
   education,
-  oppurtunities,
+  opportunities,
   statistics,
   bulletins,
 

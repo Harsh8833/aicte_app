@@ -11,6 +11,8 @@ import 'package:aicte_app/MVVM/view/Bureaus/Overview/bureaus_overview_view.dart'
 import 'package:aicte_app/MVVM/view/Bureaus/Regulation/regulation_view.dart';
 import 'package:aicte_app/MVVM/view/Bureaus/Scholarships%20&%20Grants/scholarships_and_grants_view.dart';
 import 'package:aicte_app/MVVM/view/Initiatives/Smart%20India%20Hackathon/sih_view.dart';
+import 'package:aicte_app/MVVM/view/Opportunities/faculty_opportunities.dart';
+import 'package:aicte_app/MVVM/view/Opportunities/institutional_opportunities.dart';
 import 'package:aicte_app/utils/enums/navlinks.dart';
 
 class NavigationServices {
@@ -52,7 +54,7 @@ class NavigationServices {
           title: "INITIATIVES",
           subMenu: [
             SubMenu(title: "Overview", route: BureausOverviewView.route),
-            SubMenu(title: "Startup Contenst", route: AdministrationView.route),
+            SubMenu(title: "Startup Contest", route: AdministrationView.route),
             SubMenu(
                 title: "AICTE Internship Portal",
                 route: ScholarshipsAndGrantsView.route),
@@ -70,13 +72,15 @@ class NavigationServices {
       //   subMenu: [],
       // ),
       NavigationModel(
-        navLink: NavLinks.oppurtunities,
-        title: "OPPURTUNITES",
+        navLink: NavLinks.opportunities,
+        title: "OPPORTUNITIES",
         subMenu: [
-          SubMenu(title: "For Faculty", route: BureausOverviewView.route),
-          SubMenu(title: "For Students", route: AdministrationView.route),
+          SubMenu(title: "For Faculty", route: FacultyOpportunities.route),
           SubMenu(
-              title: "For Institution", route: ScholarshipsAndGrantsView.route),
+              title: "For Students", route: InstitutionalOpportunities.route),
+          SubMenu(
+              title: "For Institution",
+              route: InstitutionalOpportunities.route),
         ],
       ),
       // NavigationModel(

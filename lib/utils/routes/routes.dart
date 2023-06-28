@@ -12,6 +12,8 @@ import 'package:aicte_app/MVVM/view/Homepage/homepage.dart';
 import 'package:aicte_app/MVVM/view/Initiatives/Smart%20India%20Hackathon/sih_view.dart';
 import 'package:aicte_app/MVVM/view/Navigation/navigation_menu.dart';
 import 'package:aicte_app/MVVM/view/Navigation/navigation_submenu.dart';
+import 'package:aicte_app/MVVM/view/Opportunities/faculty_opportunities.dart';
+import 'package:aicte_app/MVVM/view/Opportunities/institutional_opportunities.dart';
 import 'package:flutter/material.dart';
 
 class RouteGenerator {
@@ -83,6 +85,17 @@ class RouteGenerator {
       case SIHView.route:
         return MaterialPageRoute(
           builder: (_) => const SIHView(),
+        );
+
+      //Opportunities Routes
+      case FacultyOpportunities.route:
+        return MaterialPageRoute(
+          builder: (_) => const FacultyOpportunities(),
+        );
+
+      case InstitutionalOpportunities.route:
+        return MaterialPageRoute(
+          builder: (_) => const InstitutionalOpportunities(),
         );
 
       default:
