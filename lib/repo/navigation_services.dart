@@ -13,6 +13,7 @@ import 'package:aicte_app/MVVM/view/Bureaus/Scholarships%20&%20Grants/scholarshi
 import 'package:aicte_app/MVVM/view/Initiatives/Smart%20India%20Hackathon/sih_view.dart';
 import 'package:aicte_app/MVVM/view/Opportunities/faculty_opportunities.dart';
 import 'package:aicte_app/MVVM/view/Opportunities/institutional_opportunities.dart';
+import 'package:aicte_app/MVVM/view/Opportunities/student_opportunities.dart';
 import 'package:aicte_app/utils/enums/navlinks.dart';
 
 class NavigationServices {
@@ -76,8 +77,7 @@ class NavigationServices {
         title: "OPPORTUNITIES",
         subMenu: [
           SubMenu(title: "For Faculty", route: FacultyOpportunities.route),
-          SubMenu(
-              title: "For Students", route: InstitutionalOpportunities.route),
+          SubMenu(title: "For Students", route: StudentOpportunities.route),
           SubMenu(
               title: "For Institution",
               route: InstitutionalOpportunities.route),

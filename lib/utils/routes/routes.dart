@@ -14,6 +14,7 @@ import 'package:aicte_app/MVVM/view/Navigation/navigation_menu.dart';
 import 'package:aicte_app/MVVM/view/Navigation/navigation_submenu.dart';
 import 'package:aicte_app/MVVM/view/Opportunities/faculty_opportunities.dart';
 import 'package:aicte_app/MVVM/view/Opportunities/institutional_opportunities.dart';
+import 'package:aicte_app/MVVM/view/Opportunities/student_opportunities.dart';
 import 'package:flutter/material.dart';
 
 class RouteGenerator {
@@ -96,6 +97,11 @@ class RouteGenerator {
       case InstitutionalOpportunities.route:
         return MaterialPageRoute(
           builder: (_) => const InstitutionalOpportunities(),
+        );
+
+      case StudentOpportunities.route:
+        return MaterialPageRoute(
+          builder: (_) => const StudentOpportunities(),
         );
 
       default:
